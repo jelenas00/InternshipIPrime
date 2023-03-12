@@ -1,8 +1,21 @@
+using Internship.Services;
+using Internship.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<InternshipDatabaseSettings>(builder.Configuration.GetSection("InternshipDatabase"));
 // Add services to the container.
-
+builder.Services.AddSingleton<EmployeeService>();
+builder.Services.AddSingleton<TaskService>();
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyAllowSpecificOrigins",
+                      policy  =>
+                      {
+                          policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                      });
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,6 +30,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("MyAllowSpecificOrigins");
 
 app.UseAuthorization();
 

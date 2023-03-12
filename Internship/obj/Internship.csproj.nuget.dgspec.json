@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jelena\\Desktop\\Internship\\Internship\\Internship.csproj": {}
+    "C:\\Users\\Jelena\\Desktop\\InternshipIPrime\\Internship\\Internship.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jelena\\Desktop\\Internship\\Internship\\Internship.csproj": {
+    "C:\\Users\\Jelena\\Desktop\\InternshipIPrime\\Internship\\Internship.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\Internship\\Internship\\Internship.csproj",
+        "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\InternshipIPrime\\Internship\\Internship.csproj",
         "projectName": "Internship",
-        "projectPath": "C:\\Users\\Jelena\\Desktop\\Internship\\Internship\\Internship.csproj",
+        "projectPath": "C:\\Users\\Jelena\\Desktop\\InternshipIPrime\\Internship\\Internship.csproj",
         "packagesPath": "C:\\Users\\Jelena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jelena\\Desktop\\Internship\\Internship\\obj\\",
+        "outputPath": "C:\\Users\\Jelena\\Desktop\\InternshipIPrime\\Internship\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jelena\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
